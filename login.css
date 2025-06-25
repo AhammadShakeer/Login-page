@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/nt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper{
+    height: 400px;
+    width: 420px;
+    padding: 50px 16px 0px 16px;
+    border: none;
+    border-radius: 45px;
+    box-shadow:  0px 0px 25px rgb(18, 17, 17);
+}
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(76, 73, 73);
+}
+.input-box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: relative;
+    border: none;
+    border: 2px solid rgba(21, 20, 20, 0.5);
+    border-radius: 40px;
+    font-size: 20px;
+    padding-left: 15px;
+}
+.input-box input::placeholder{
+    color: black;
+    font-size: medium;
+    position: absolute;
+    left: 20px;
+    letter-spacing: 2px;
+}
+
+.remember-forgot{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 8px; 
+}
+button{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 2s ease;
+}
+button:hover{
+     background-color: rgba(0,0,0,0.1);
+}
+.register {
+    text-align: center;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+.wrapper:hover{
+    animation: slide 2s ease forwards;
+}
+a{
+   color: grey;
+   text-decoration: none;
+}
+/* .input-box input:focus {
+    outline: none;
+    border-color: #555;
+} */
+@media screen and (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+        height: auto;
+        padding: 40px 20px;
+    }
+}
